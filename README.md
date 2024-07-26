@@ -9,11 +9,11 @@ This script only works for password-less keys (DO NOT SET A PASSWORD) *This is d
 ## How to run
 1. Download the script in your root build directory and run it
 
-`wget https://raw.githubusercontent.com/drenzzz/build-signed-script/main/create-signed-env.sh`
-
-`chmod +x create-signed-env.sh`
-
-`./create-signed-env.sh`
+```bash
+wget https://raw.githubusercontent.com/drenzzz/build-signed-script/main/create-signed-env.sh
+chmod +x create-signed-env.sh
+./create-signed-env.sh
+```
 
 2. Enter info for certificate subject line and confirm
 
@@ -22,6 +22,8 @@ This script only works for password-less keys (DO NOT SET A PASSWORD) *This is d
 ### Prep device tree (for other ROMs)
 In your device tree (or common device tree) add:
 
-`-include vendor/lineage-priv/keys/keys.mk`
+```bash
+-include vendor/lineage-priv/keys/keys.mk
+```
 
 Build as usual!
